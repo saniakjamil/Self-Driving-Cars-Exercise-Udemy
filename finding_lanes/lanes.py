@@ -42,5 +42,7 @@ line_image = display_lines(lane_image, lines)
 combo_image = cv2.addWeighted(lane_image, 0.8, line_image, 1, 1)
 # cv2.addWeightes(first image, multiply weight of 0.8, line_image, multiply weight of 1, gamma argument scale 1: add to our sum)
 
-cv2.imshow("region of interest", line_image)
+cv2.imshow("region of interest", combo_image)
 cv2.waitKey()
+# plt.imshow(combo_image)
+# plt.show()
