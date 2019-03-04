@@ -74,11 +74,11 @@ def get_lines(image):
     canny_image = canny(image)
     cropped_image = reigon_of_interst(canny_image)
     lines = cv2.HoughLinesP(cropped_image, 2, np.pi/180, 100, np.array([]), minLineLength=40, maxLineGap=5)
-    average_lines = get_average_slope_lines(lane_image, lines)
+    average_lines = get_average_slope_lines(image, lines)
     #  cv2.HoughLinesP(image, houghSpace grid with 2 px, with 1degree, threshold = 100 intersection atleast,
      # empty array to store these lines, min length off line, max gap between a line)
-    line_image = display_lines(lane_image, average_lines)
-    combo_image = cv2.addWeighted(lane_image, 0.8, line_image, 1, 1)
+    line_image = display_lines(image, average_lines)
+    combo_image = cv2.addWeighted(image, 0.8, line_image, 1, 1)
     # cv2.addWeightes(first image, multiply weight of 0.8, line_image, multiply weight of 1, gamma argument scale 1: add to our sum)
 
     cv2.imshow("region of interest", combo_image)
