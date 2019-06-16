@@ -24,3 +24,7 @@ Further point and positive region: give higher probability.
 Further point and negative region: give low probability.
 
 For correct classification of data, we will use class entropy.
+
+### Class Entropy
+
+### Gradient Descent
