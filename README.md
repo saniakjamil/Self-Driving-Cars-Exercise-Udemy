@@ -28,3 +28,7 @@ For correct classification of data, we will use class entropy.
 ### Class Entropy
 
 ### Gradient Descent
+
+## Keras
+
+It does all the dirty work for us; predictions (Which were done in previous section).
