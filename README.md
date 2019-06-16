@@ -32,3 +32,13 @@ For correct classification of data, we will use class entropy.
 ## Keras
 
 It does all the dirty work for us; predictions (Which were done in previous section).
+
+## Deep Neural Network.
+
+What if it's not a linear model? What if we need a curve to classify points?
+
+We will use deep neural networks with hidden layers.
+
+Note: To play with deep neural network, you can go to playground.tensorflow.org.
+
+## Multiclass Classification
