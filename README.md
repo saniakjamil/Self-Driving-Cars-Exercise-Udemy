@@ -42,3 +42,5 @@ We will use deep neural networks with hidden layers.
 Note: To play with deep neural network, you can go to playground.tensorflow.org.
 
 ## Multiclass Classification
+
+We are using softmax.
